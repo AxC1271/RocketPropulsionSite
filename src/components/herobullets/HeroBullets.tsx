@@ -1,10 +1,12 @@
 import { IconCheck } from '@tabler/icons-react';
 import { Button, Container, Group, List, Text, ThemeIcon, Title } from '@mantine/core';
 import Lottie from 'lottie-react';
-import RocketAnimation from "../../assets/animations/RocketAnimation.json";
+import Collaboration from "../../assets/animations/Collaboration.json";
 import classes from './HeroBullets.module.css';
+import { useNavigate } from 'react-router-dom';
 
 export default function HeroBullets() {
+    const navigate = useNavigate();
     return (
         <Container size="md">
             <div className={classes.inner}>
@@ -13,7 +15,7 @@ export default function HeroBullets() {
                         A <span className={classes.highlight}>Modern</span> Liquid <br /> Propulsions Team
                     </Title>
                     <Text c="dimmed" mt="md">
-                        We are a student led team within the Case Western Reserve 
+                        We are a student led team within the Case Western Reserve University
                         Rocket Team, where we design, test, and build rocket engines
                         that utilize liquid propellant instead of traditional fuel-based
                         approaches.
@@ -30,29 +32,40 @@ export default function HeroBullets() {
                         }
                     >
                         <List.Item>
-                            <b>TypeScript based</b> – build type safe applications, all components and hooks
-                            export types
+                            <b>LOX based</b> – our engines use liquid oxygen propellant
+                            due to its high performance.
                         </List.Item>
                         <List.Item>
-                            <b>Free and open source</b> – all packages have MIT license, you can use Mantine in
-                            any project
+                            <b>Environmentally Friendly</b> – Liquid oxygen based rockets produce
+                            less carbon emissions.
                         </List.Item>
                         <List.Item>
-                            <b>No annoying focus ring</b> – focus ring will appear only when user navigates with
-                            keyboard
+                            <b>Higher Control & Leverage</b> – Liquid based rockets possess a higher
+                            degree of maneuverability, making them highly versatile.
                         </List.Item>
                     </List>
 
                     <Group mt={30}>
-                        <Button radius="xl" size="md" className={classes.control}>
-                            Get started
+                        <Button 
+                        radius="xl" 
+                        size="md" 
+                        className={classes.control}
+                        onClick={() => navigate('/our-team')}
+                        >
+                            Our Team
                         </Button>
-                        <Button variant="default" radius="xl" size="md" className={classes.control}>
-                            Source code
+                        <Button 
+                        variant="default" 
+                        radius="xl" 
+                        size="md" 
+                        className={classes.control}
+                        onClick={() => navigate('/contact-us')}
+                        >
+                            Contact Us
                         </Button>
                     </Group>
                 </div>
-                <Lottie animationData={RocketAnimation} />
+                <Lottie animationData={Collaboration} />
             </div>
         </Container>
     );
