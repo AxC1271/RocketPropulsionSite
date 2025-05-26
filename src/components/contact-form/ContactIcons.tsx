@@ -26,8 +26,8 @@ function ContactIcon({ icon: Icon, title, description, ...others }: ContactIconP
 }
 
 const MOCKDATA = [
-  { title: 'Email', description: 'hello@case.edu', icon: IconAt },
-  { title: 'Phone', description: '+1 (800) 335 35 35', icon: IconPhone },
+  { title: 'Email', description: 'johndoe@case.edu', icon: IconAt },
+  { title: 'Phone', description: '+1 (216)-368-XXXX', icon: IconPhone },
   { title: 'Address', description: '11900 Euclid Avenue', icon: IconMapPin },
   { title: 'Working hours', description: '8 a.m. – 11 p.m.', icon: IconSun },
 ];

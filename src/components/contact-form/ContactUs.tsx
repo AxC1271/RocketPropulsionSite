@@ -38,7 +38,7 @@ export default function ContactUs() {
         <div className={classes.form}>
           <TextInput
             label="Email"
-            placeholder="your@email.com"
+            placeholder="your-email@case.edu"
             required
             radius="md"
             classNames={{ input: classes.input, label: classes.inputLabel }}
@@ -53,7 +53,7 @@ export default function ContactUs() {
           <Textarea
             required
             label="Your message"
-            placeholder="I want to order your goods"
+            placeholder="I want to learn more about your team"
             minRows={4}
             mt="md"
             radius="md"
