@@ -9,16 +9,14 @@ export default function HeroImageBackground() {
 
       <div className={classes.inner}>
         <Title className={classes.title}>
-          Automated AI code reviews for{' '}
-          <Text component="span" inherit className={classes.highlight}>
-            any stack
-          </Text>
+          Where we document the design and manufacturing of 
+          liquid propulsion engines
         </Title>
 
         <Container size={640}>
           <Text size="lg" className={classes.description}>
-            Build more reliable software with AI companion. AI is also trained to detect lazy
-            developers who do nothing and just complain on Twitter.
+            Get started with the basics of liquid propulsion engines using our 
+            guide and documentation.
           </Text>
         </Container>
 

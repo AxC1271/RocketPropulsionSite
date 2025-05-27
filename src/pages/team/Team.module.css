@@ -1,15 +1,20 @@
+.team {
+    margin-top: 40px;
+}
+
 .user_group {
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 10px;
-    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .title {
     font-family: "Poppins";
     font-weight: 50;
     font-size: 28px;
+    margin-top: 40px;
 }
 
 .underline {

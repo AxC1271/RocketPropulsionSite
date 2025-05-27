@@ -8,7 +8,7 @@ import classes from "./Team.module.css";
 
 const Team = () => {
     return (
-        <div>
+        <div className={classes.team}>
             <Header />
             <div className={classes.user_group}>
                 <h1 className={classes.title}>Exec Board</h1>
