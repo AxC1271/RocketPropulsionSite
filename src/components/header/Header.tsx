@@ -7,6 +7,7 @@ import { useNavigate, useLocation } from 'react-router-dom';
 
 const links = [
   { link: '/', label: 'About Us' },
+  {link: '/docs', label: 'Documentation'},
   { link: '/projects', label: 'Projects' },
   { link: '/our-team', label: 'Our Team' },
   { link: '/contact-us', label: 'Contact Us' },

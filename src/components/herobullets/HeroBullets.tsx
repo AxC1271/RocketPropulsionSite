@@ -15,8 +15,8 @@ export default function HeroBullets() {
                         A <span className={classes.highlight}>Modern</span> Liquid <br /> Propulsions Team
                     </Title>
                     <Text c="dimmed" mt="md">
-                        We are a student led team within the Case Western Reserve University
-                        Rocket Team, where we design, test, and build rocket engines
+                        We are a student led team at Case Western Reserve University 
+                        where we design, test, and build rocket engines
                         that utilize liquid propellant instead of traditional fuel-based
                         approaches.
                     </Text>

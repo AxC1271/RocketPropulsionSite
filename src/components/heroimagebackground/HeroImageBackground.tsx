@@ -1,16 +1,17 @@
 import cx from 'clsx';
+import { useNavigate } from 'react-router-dom';
 import { Button, Container, Overlay, Text, Title } from '@mantine/core';
 import classes from './HeroImageBackground.module.css';
 
 export default function HeroImageBackground() {
+    const navigate = useNavigate();
   return (
     <div className={classes.wrapper}>
       <Overlay color="#000" opacity={0.65} zIndex={1} />
 
       <div className={classes.inner}>
         <Title className={classes.title}>
-          Where we document the design and manufacturing of 
-          liquid propulsion engines
+          Learn how we do liquid propulsions.
         </Title>
 
         <Container size={640}>
@@ -21,7 +22,12 @@ export default function HeroImageBackground() {
         </Container>
 
         <div className={classes.controls}>
-          <Button className={classes.control} variant="white" size="lg">
+          <Button 
+          className={classes.control} 
+          variant="white" 
+          size="lg"
+          onClick={() => navigate('/docs')}
+          >
             Get started
           </Button>
           <Button className={cx(classes.control, classes.secondaryControl)} size="lg">
