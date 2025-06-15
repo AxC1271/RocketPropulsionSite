@@ -36,10 +36,6 @@ export default function UserInfoAction({
       <Text ta="center" c="dimmed" fz="sm">
         {email} • {position}
       </Text>
-
-      <Button variant="default" fullWidth mt="md" onClick={onSendMessage}>
-        Send message
-      </Button>
     </Paper>
   );
 }

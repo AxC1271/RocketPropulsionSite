@@ -18,8 +18,6 @@ const Home = () => {
             >
                 <HeroBullets />
             </motion.div>
-
-
             <FooterSocial />
         </div>
     )
